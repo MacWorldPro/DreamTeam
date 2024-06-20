@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL 2024 Dream11 Team Selector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>IPL 2024 Dream11 Team Selector</h1>
+    </header>
+    <main>
+        <form action="/submit_teams" method="post">
+            <section class="team-selection">
+                <h2>Select Teams</h2>
+                <div class="select-team">
+                    <label for="team1">Select Team 1:</label>
+                    <select name="team1" id="team1">
+                        <option value="MI">Mumbai Indians</option>
+                        <option value="CSK">Chennai Super Kings</option>
+                        <option value="RCB">Royal Challengers Bangalore</option>
+                        <option value="KKR">Kolkata Knight Riders</option>
+                        <option value="SRH">Sunrisers Hyderabad</option>
+                        <option value="DC">Delhi Capitals</option>
+                        <option value="PBKS">Punjab Kings</option>
+                        <option value="RR">Rajasthan Royals</option>
+                        <option value="GT">Gujarat Titans</option>
+                        <option value="LSG">Lucknow Super Giants</option>
+                    </select>
+                </div>
+                <div class="select-team">
+                    <label for="team2">Select Team 2:</label>
+                    <select name="team2" id="team2">
+                        <option value="MI">Mumbai Indians</option>
+                        <option value="CSK">Chennai Super Kings</option>
+                        <option value="RCB">Royal Challengers Bangalore</option>
+                        <option value="KKR">Kolkata Knight Riders</option>
+                        <option value="SRH">Sunrisers Hyderabad</option>
+                        <option value="DC">Delhi Capitals</option>
+                        <option value="PBKS">Punjab Kings</option>
+                        <option value="RR">Rajasthan Royals</option>
+                        <option value="GT">Gujarat Titans</option>
+                        <option value="LSG">Lucknow Super Giants</option>
+                    </select>
+                </div>
+            </section>
+            <button type="submit">Submit Teams</button>
+        </form>
+    </main>
+</body>
+</html>

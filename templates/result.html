@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL 2024 Dream11 Team Selector - Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>IPL 2024 Dream11 Team Selector - Results</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Top 11 Players</h2>
+            <ul>
+                {% for player in top_players %}
+                    <li>{{ player }}</li>
+                {% endfor %}
+            </ul>
+        </section>
+        <a href="/">Go Back</a>
+    </main>
+</body>
+</html>
